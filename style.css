@@ -198,6 +198,9 @@ section {
 
 .title {
     font-size: 3rem;
+    text-decoration: underline;
+    text-underline-offset: .75rem;
+    text-decoration-color: rgb(181,181,181);
     text-align: center;
 }
 
@@ -318,6 +321,7 @@ section {
 
 .skills-container{
     row-gap: 2rem;
+    padding-top: 20px;
 }
 
 .skills__name{
@@ -325,7 +329,7 @@ section {
     font-size: var(--small-font-size);
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
-    padding: .25rem .5rem;
+    padding: .25rem 1rem;
     background-color: var(--white-color);
     border-radius: .25rem;
 }
@@ -343,3 +347,80 @@ section {
     color: blue;
 
 }
+
+/* Projects */
+
+#projects  {
+    width: 800px;
+    margin: auto;
+    height: 80vh;
+    padding-top: 9vh;
+}
+
+.projects-containers{
+    display: flex;
+}
+
+.project {
+    text-align: center;
+    margin: 50px auto;
+    width: 400px
+}
+
+.project-pfp {
+    height: 200px;
+}
+
+.project-languages {
+    justify-content: center;
+    display: flex;
+}
+
+.project-icon {
+    height: 20px;
+    margin: 0 5px;
+}
+
+.project-button {
+    color: blue;
+    background-color: white;
+    border: 2px solid blue;
+    padding: 0.4rem .5rem;
+    transition: all 0.3s;
+    border-radius: 3px;
+    border: blue 2px solid;
+    cursor: pointer;
+    text-align: center;
+    margin:5px auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+.project-button:hover{
+    color:white;
+    background-color: blue;
+}
+
+.project-button-icon{
+    height: 15px;
+    margin: auto 3.5px;
+}
+
+footer{
+    height: 15vh;
+    margin:0 1rem;
+  }
+  footer p{
+    text-align: center;
+  }
+  .footer-nav{
+    justify-content: center;
+    margin: 0;
+    height: 100px;
+  }
+  .footer-nav-list{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+  }
+  
