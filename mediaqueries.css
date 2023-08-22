@@ -1,8 +1,48 @@
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display:none;
     }
     #hamburger-nav {
         display: flex;
+    }
+    #experience, .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile, .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        /* width: 275px;
+        height: 275px; */
+        padding: 1rem;
+        margin: 0 auto 2rem;
+    }
+    .section__pic-container img {
+        max-width: 100%; /* Make sure the image doesn't exceed the container */
+        width: auto; /* Allow the image to scale down while maintaining aspect ratio */
+    }
+    .about-containers {
+        margin-top: 0;
     }
 }
