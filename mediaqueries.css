@@ -4,8 +4,25 @@
         height: 83vh;
         margin-bottom: 6rem;
     }
+
+
     .about-containers {
         flex-wrap: wrap;
+        font-size: .95rem;
+    }
+
+    #about {
+        margin-bottom: 6rem;
+    }
+
+    footer {
+        margin-top: 10rem;
+    }
+
+    #projects {
+        margin-top: 7rem;
+        margin-bottom: 10rem;
+        height = 5vh;
     }
 
 }
@@ -45,4 +62,6 @@
     .about-containers {
         margin-top: 0;
     }
+
+
 }
