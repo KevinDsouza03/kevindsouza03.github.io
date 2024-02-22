@@ -9,6 +9,12 @@
    padding: 9; 
 }
 
+.page-container {
+    
+    max-height: 100vh;
+    
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     
@@ -273,28 +279,47 @@ section {
     position: relative;
 }
 
-.about-containers {
+/* side by side in a box. */
+
+
+.about-grid {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    display: grid;
+    font-size: 18px;
+    max-width: 100%; 
+    padding: 0rem;
+    border-radius: 2rem;
+    /* border: 0.1rem solid grey; */
+    text-align: center;
+    grid-template-columns:  1fr 1fr;
+    margin: 1rem ; 
 }
 
+.about-grid-item-left {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
 
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-    font-size: 18px; /* Adjusted font size for smaller space */
-    max-width: 500px; /* Original width of the text container */
-    max-height: 100%; /* Allow the container to grow in height if needed */
-    overflow: hidden; /* Hide overflow if the text exceeds the container */
 }
 
-.about-containers,
-.about-details-container {
+.about-grid-item-right {
     padding-left: 0%;
     align-self: center;
     display: block;
+
 }
+
+/* .details-container {
+    padding-left: 0%;
+    align-self: center;
+    display: block;
+} */
 
 .about-pic{
     border-radius: 2rem;
@@ -307,18 +332,17 @@ section {
 }
 
 .section__pic-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    text-align:center;
 }
 
-.classes {
+
+.education-header, .education-content {
     list-style: none;
-    text-align:center;
+    text-align: center;
+}
+
+.classes-list {
+    list-style: none;
+    text-align: center;
 }
 
 .section-container {
@@ -416,20 +440,23 @@ section {
 
 
 footer{
-  height: 15vh;
-  margin:0 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
 }
-footer p{
-  text-align: center;
-}
+
 .footer-nav{
-  justify-content: center;
-  margin: 0;
-  height: 100px;
+    justify-content: center;
+    margin: 0;
 }
 .footer-nav-list{
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-  display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;
 }
