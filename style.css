@@ -12,7 +12,6 @@
 .page-container {
     padding-bottom: 2.5rem;
     max-height: 100%;
-    
 }
 
 body {
@@ -362,7 +361,7 @@ section {
     font-size: var(--small-font-size);
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
-    padding: .25rem 1rem;
+    padding: .5rem 1rem;
     background-color: var(--white-color);
     border-radius: .25rem;
 }
@@ -388,44 +387,46 @@ section {
     padding: 0;
     box-sizing: border-box;
 }
-
-/* .projects-containers{
-    display: flex;
-    width: 800px;
-    border: solid gray;
-    height: 80vh;
-    padding-bottom: 30vh;
-    align-items: left;
-} */
-
 .project {
     display: flex;
-    padding-bottom: 30px;
+    margin: 120px;
     position: relative;
     box-sizing: border-box;
-    /* text-align: center;
-    margin: 50px auto;
-    width: 400px */
 }
 
 .project-description{
-    margin: 0 auto;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    width: 60%;
+    margin-right: 0;
+    margin-left: auto;;
+
+}
+
+.project-description > h2 {
+    text-align: center;
 }
     
 
 .project-pfp {
     display:block;
-    width: 40%;
     margin-right: 20px;
+    box-sizing: border-box;
+    line-height :10px;
+    position: static;
+    z-index: auto;
+    width: 20%;
+    height: 20%;
 }
 
+.project-pfp-gif {
+    display:block;
+    margin-right: 20px;
+    box-sizing: border-box;
+    line-height :10px;
+    position: static;
+    z-index: auto;
+    width: 35%;
+    height: 35%;
+}
 .project-languages {
     justify-content: center;
     display: flex;
@@ -447,7 +448,10 @@ section {
     cursor: pointer;
     text-align: center;
     margin:5px auto;
-    font-family: 'Nunito', sans-serif;
+}
+.Git-button {
+    align-items: center;
+    text-align: center;
 }
 
 .project-button:hover{
