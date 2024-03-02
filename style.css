@@ -159,7 +159,7 @@ a:hover {
 section {
     padding-top: 4vh;
     /* height: 96vh; */
-    margin: 0 10rem;
+    margin: 0 5rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -207,6 +207,7 @@ section {
     text-underline-offset: .75rem;
     text-decoration-color: rgb(181,181,181);
     text-align: center;
+    margin-top: 2rem;
 }
 
 #socials-container {
@@ -366,7 +367,7 @@ section {
     border-radius: .25rem;
 }
 
-
+    
 .skills__img{
     border-radius: .5rem;
 }
